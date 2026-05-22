@@ -7,6 +7,7 @@ import ScrollAnimations from "@/components/ScrollAnimations"
 import PageLoader from "@/components/PageLoader"
 import PageTransition from "@/components/PageTransition"
 import NavigationLoader from "@/components/NavigationLoader"
+import ResumeWidget from "@/components/ResumeWidget"
 
 const _geist = Geist({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
@@ -47,9 +48,11 @@ export default function RootLayout({
         <NavigationLoader />
         <PageTransition />
         {children}
+        <ResumeWidget />
         <ScrollAnimations />
         <Analytics />
       </body>
     </html>
   )
 }
+
